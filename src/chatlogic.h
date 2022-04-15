@@ -15,11 +15,7 @@ class ChatLogic
 private:
     //// STUDENT CODE
     ////
-
-    // data handles (owned)
-    std::vector<GraphNode *> _nodes;
-    std::vector<GraphEdge *> _edges;
-
+    std::vector<std::unique_ptr<GraphNode>> _nodes;
     ////
     //// EOF STUDENT CODE
 

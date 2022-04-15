@@ -28,7 +28,20 @@ public:
     ~ChatBot();
 
     //// STUDENT CODE
-    ////
+    //// Task -2 Rule of Five Implementation
+
+    // 1- copy constructor
+    ChatBot(const ChatBot &source);
+    
+    // 2 - copy assignment operator
+    
+    ChatBot &operator=(const ChatBot &source);
+    
+    // 3 -  move constructor
+    ChatBot(ChatBot &&source);
+    
+    // 4-  move assignment operator
+    ChatBot &operator=(ChatBot &&source);
 
     ////
     //// EOF STUDENT CODE
